@@ -15,7 +15,7 @@ if st.button("Create"):
         prof_obj.set(text=txt, add=additional_word, fill_text=fill_text)
         data_load_state = st.text("Sending request...")
         try:
-            st.json(prof_obj.getFilteredResults())
+            st.text(prof_obj.getFilteredResults()["result"])
             data_load_state.text("Result: ")
         except:
             data_load_state.text("Failed to send request.")
