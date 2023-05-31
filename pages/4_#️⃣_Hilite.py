@@ -5,7 +5,7 @@ from scripts.api_func import HiliteMeFormatter
 
 st.title("A Python source code highlighter tool")
 hilite_obj = HiliteMeFormatter()
-# persistent_component = components.html("")
+
 def update_text():
     return
 
@@ -13,7 +13,6 @@ c1, c2 = st.columns(2)
 
 with c1:
     txt = st.text_area('Code to beautify', on_change=update_text, height=500)
-
     st.write("Current text length: " + str(len(txt)))
 
 with c2:

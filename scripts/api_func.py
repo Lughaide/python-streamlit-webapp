@@ -1,19 +1,12 @@
 import requests
 
-def load_img_from_api(url):
+def get_data_from_api(url, is_json=True):
     response = requests.get(url)
-    recv_res = response.json()
-    return recv_res["message"]
-
-def load_fact_from_api(url):
-    response = requests.get(url)
-    recv_res = response.json()
-    return recv_res["data"][0]["attributes"]["body"]
-
-def load_img_arr_from_api(url):
-    response = requests.get(url)
-    img_data = response.content
-    return img_data
+    if (is_json):
+        recv_res = response.json()
+    else:
+        recv_res = response.content
+    return recv_res
 
 class HiliteMeFormatter:
     def __init__(self, code="", lexer="python", style="colorful", divstyles=""):
