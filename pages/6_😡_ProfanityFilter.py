@@ -1,6 +1,8 @@
 import streamlit as st
 
-from scripts.api_func import ProfanityCheck
+from scripts.api_func import ProfanityCheck, load_page
+
+load_page(__file__)
 
 st.title("Profanity filter")
 

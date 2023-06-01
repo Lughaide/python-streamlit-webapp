@@ -1,7 +1,9 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-from scripts.api_func import HiliteMeFormatter
+from scripts.api_func import HiliteMeFormatter, load_page
+
+load_page(__file__)
 
 st.title("A Python source code highlighter tool")
 hilite_obj = HiliteMeFormatter()

@@ -1,4 +1,23 @@
 import requests
+import streamlit as st
+import os
+
+def load_page(filename):
+    try:
+        st.set_page_config(
+            page_title="About Page",
+            page_icon=os.path.basename(filename).split("_")[1],
+            layout="centered",
+            initial_sidebar_state="auto",
+            menu_items={
+                'Get Help': 'https://github.com/Lughaide',
+                'Report a bug': "https://github.com/Lughaide",
+                'About': "# This is the " + os.path.basename(filename).split("_")[1] + " page"
+            }
+        )
+    except:
+        with st.expander("Notice:"):
+            st.text(f"Running script externally.")
 
 def get_data_from_api(url, is_json=True):
     response = requests.get(url)

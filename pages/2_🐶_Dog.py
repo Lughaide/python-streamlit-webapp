@@ -1,6 +1,9 @@
 import streamlit as st
+import os
 
-from scripts.api_func import get_data_from_api
+from scripts.api_func import get_data_from_api, load_page
+
+load_page(__file__)
 
 DOG_IMG_URL = "https://dog.ceo/api/breeds/image/random"
 DOG_FACT_URL = "https://dogapi.dog/api/v2/facts"

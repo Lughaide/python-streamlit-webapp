@@ -1,5 +1,7 @@
 import streamlit as st
-from scripts.api_func import get_data_from_api
+from scripts.api_func import get_data_from_api, load_page
+
+load_page(__file__)
 
 CAT_IMG_URL = "https://cataas.com/cat"
 
