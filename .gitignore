@@ -51,4 +51,4 @@ docs/_build/
 
 repokey
 
-scripts/__pycache__/*
+**/__pycache__/
