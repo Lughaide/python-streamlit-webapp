@@ -52,5 +52,3 @@ docs/_build/
 repokey
 
 **/__pycache__/
-
-.streamlit/*
