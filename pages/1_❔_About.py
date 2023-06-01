@@ -33,17 +33,17 @@ with tabs[0]:
 
     st.line_chart(chart_data)
 
-# with tabs[1]:
-#     exec(open("./pages/2_🐶_Dog.py").read())
+with tabs[1]:
+    exec(open("./pages/2_🐶_Dog.py").read())
 
-# with tabs[2]:
-#     exec(open("./pages/3_🐱_Cat.py").read())
+with tabs[2]:
+    exec(open("./pages/3_🐱_Cat.py").read())
 
-# with tabs[3]:
-#     exec(open("./pages/4_#️⃣_Hilite.py").read())
+with tabs[3]:
+    exec(open("./pages/4_#️⃣_Hilite.py").read())
 
-# with tabs[4]:
-#     exec(open("./pages/5_🔢_QR.py").read())
+with tabs[4]:
+    exec(open("./pages/5_🔢_QR.py").read())
 
-# with tabs[5]:
-#     exec(open("./pages/6_😡_ProfanityFilter.py").read())
+with tabs[5]:
+    exec(open("./pages/6_😡_ProfanityFilter.py").read())
